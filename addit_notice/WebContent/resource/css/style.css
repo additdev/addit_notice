@@ -1,1 +1,181 @@
-/*style*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+
+
+body{
+    font-family: 'Noto Sans KR';
+    min-width: 1900px !important;
+    background: #F8F9FF;
+}
+
+
+/* login */
+
+label{
+    cursor: pointer;
+}
+
+button:disabled {
+    background: rgb(99, 99, 99) !important;    
+    cursor: unset;
+}
+
+button{
+    cursor: pointer;
+}
+
+.wrap{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background: #F8F9FF;
+}
+
+.add-section-wrap{
+    width: 900px;
+    height: 500px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.peartech-logo img{
+	width:210px;
+	margin-bottom:20px;
+}
+
+.login-form{
+    width: 40%;
+    padding: 10px 5px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgb(3, 57, 126,0.3);
+    text-align: center;
+}
+
+.login-form div{
+    padding: 5px 40px;
+}
+
+.login-form div input[type=password]{
+    width: 100%;
+    text-indent: 45px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(168, 168, 168);
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in;
+    color: #333;
+}
+
+.login-form div input[type=text]{
+    width: 100%;
+    text-indent: 45px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(168, 168, 168);
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in;
+    color: #333;
+}
+
+.login-form .id-form,.ps-form{
+    position: relative;
+}
+
+.login-form img{
+    position: absolute;
+    z-index: 1;
+    width: 15px;
+    top: 45%;
+    pointer-events: none;
+    left: 70px;
+    transform: translate(-50%,-50%);
+}
+
+.login-form div input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(10, 57, 167,0.6);
+}
+
+.login-form div input:focus img{
+   opacity: 0.2;
+}
+
+.login-form div input::placeholder{
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.login-form .login-type{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 40px;
+    text-shadow: 0px 0px 1px #062263;
+    color: #062263;
+}
+
+.login-form .button-div{
+    padding: 5px 40px;
+    
+}
+
+.login-form button{
+    width: 100%;
+    border: none;
+    background: #0A4297;
+    color: #F8F9FF;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-form .save-id{
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #666;
+}
+
+.login-form .save-id input{
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+
+.login-form .error-area{
+    text-align: left;
+    font-size: 12px;
+}
+
+.login-form .error-area .error-text{
+    color: #BE373C;
+    font-weight: bold;
+}
+
+.logo-area .page-name{
+    color: #062263;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.logo-area .page-name::before{
+    border-top: 2px solid #dcdc;
+    content: "";
+    display: block;
+    width: 20%;
+    padding-top: 20px;
+}
+
+.logo-area span{
+    font-size: 12px;
+    color: #818FAF;
+    display: inline-block;
+    margin-top: 10px;
+}
+
